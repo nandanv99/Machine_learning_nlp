@@ -22,3 +22,6 @@ output = query({
 
 def home(request):
 	return render(request,"index.html")
+
+def nlp1(request):
+	return render(request,"index.html")
