@@ -10,12 +10,39 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Title</title>
 </head>
-{% load static %}
+<!-- {% load static %} -->
 
 <style>
-    
+    .css-selector {
+    background: linear-gradient(312deg, #f2a962, #387b6a, #c05df7);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+.wannabtn:hover{
+    width: 100% !important;
+    transition: width .5s ;
+}
 </style>
-<body>
+<body class="css-selector">
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark">
     <ul class="nav ">
     <li class="nav-item">
@@ -29,39 +56,51 @@
     </li>
     </ul>
     </nav> -->
-    <div class="container-fluid text-center">
-        <div class="row text-center" >
-            <div class="col-md-6 col-sm-3 col-6 bg-success   text-center" style="height:50vh" >
-                <div class="card p-5 m-5" id="card"
-                style="border-radius: 5px; padding: 0px; border: 0px;" data-tilt="" data-tilt-scale="0.95"
-                style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-                    <div class="h1">NLP1</div>
+    <div class="container-fluid ">
+        <div class="row " >
+            <div class="col-md-12   border-light border   " >
+                <div class="card bg-transparent p-5 m-3 border border-light" id="card" 
+                style="cursor: pointer; border-radius: 5px; padding: 0px; border: 0px; box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);"  data-tilt="" data-tilt-scale="0.95">
+                    <div class="row " style="backdrop-filter: blur(5px);">
+                        <div class="col-md-6 col-sm-6 ">
+                            <img height="100%" src="https://venturebeat.com/wp-content/uploads/2018/09/natural-language-processing-e1572968977211.jpg?w=1200&strip=all" class="img-fluid m-0 p-0" alt="">
+                        </div>
+                        <div class="col-md-3  " style="background: rgba(0, 0, 0, 0.258);">
+                            <h1 class="text-white" >NLP</h1>
+                            <h5 class="text-white">Text classification </h5>
+                            <small class="text-muted">~Hugging face</small>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-center">
+                                <a href="#" class="wannabtn btn btn btn-outline-dark text-center mt-3" style="width: 80%;">Wanna try !</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-6 col-6 bg-warning text-center"style="height:50vh" >
-                <div class="card p-5 m-5" id="card1"
+            <div class="col-md-6   border-light border text-center"style="height:50vh" >
+                <div class="card p-5 bg-transparent m-5" id="card1"
                 style="border-radius: 5px;  padding: 0px; border: 0px;" data-tilt="" data-tilt-scale="0.95"
                 style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-                    <div class="h1">NLP2</div>
+                    <div class="h1 text-white">About to come</div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-3 col-6 bg-danger  " style="height:50vh" >
-                <div class="card p-5 m-5" id="card2"
+            <div class="col-md-6  border-light border  " style="height:50vh" >
+                <div class="card p-5 m-5 bg-transparent" id="card2"
                 style="border-radius: 5px;  padding: 0px; border: 0px;" data-tilt="" data-tilt-scale="0.95"
                 style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-                    <div class="h1">NLP3</div>
+                    <div class="h1 text-white">About to come</div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-3 col-6 bg-primary " style="height:50vh">
-                <div class="card p-5 m-5" id="card3"
+            <div class="col-md-6   border-light border " style="height:50vh">
+                <div class="card p-5 m-5 bg-transparent" id="card3"
                 style="border-radius: 5px;  padding: 0px; border: 0px;" data-tilt="" data-tilt-scale="0.95"
                 style="will-change: transform; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
-                    <div class="h1">NLP4</div>
+                    <div class="h1 text-white">About to come</div>
                 </div>
             </div>
         </div>
       </div>
-    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
@@ -69,6 +108,6 @@
     /* Store the element in el */
 
 </script>
-<script src="{% static 'js/index.js' %}"></script>
+<!-- <script src="{% static 'js/index.js' %}"></script> -->
 </body>
 </html>
